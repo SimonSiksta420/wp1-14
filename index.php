@@ -31,12 +31,12 @@ var_dump($submit);
 
    <input type="submit" name="submit" value="Odeslat">
    <br>
-   
+
    <?php
 if (isset($submit)) {
-    echo "formulář byl odeslán";
+    echo <br> "Formulář byl odeslán";
 } else {
-    echo "stránka byla načtena bez odeslaného formuláře";
+    echo <br> "Stránka byla načtena bez odeslaného formuláře";
 }
 ?>
 </body>
