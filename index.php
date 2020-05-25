@@ -11,19 +11,15 @@ var_dump($submit);
 </head>
 <body>
 
-<?php
-if (isset($submit)) {
-    echo "formulář byl odeslán";
-} else {
-    echo "stránka byla načtena bez odeslaného formuláře";
-}
-?>
-
  <form action="index.php" method="post">
+
+  <h2> E-mail </h2>
+
   <label for="email"> E-mail: </label>
   <input type="email" name="email" id="email">
 
    <h2> Pohlaví </h2>
+
    <label for="gender-male"> Muž </label>
    <input type="radio" name="gender" value="male" id="gender-male">
 
@@ -34,5 +30,14 @@ if (isset($submit)) {
    <input type="radio" name="gender" value="none" id="gender-none">
 
    <input type="submit" name="submit" value="Odeslat">
+   <br>
+   
+   <?php
+if (isset($submit)) {
+    echo "formulář byl odeslán";
+} else {
+    echo "stránka byla načtena bez odeslaného formuláře";
+}
+?>
 </body>
 </html>
