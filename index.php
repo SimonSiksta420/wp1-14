@@ -34,9 +34,9 @@ var_dump($submit);
 
    <?php
 if (isset($submit)) {
-    echo <br> "Formulář byl odeslán";
+    echo "<br> Formulář byl odeslán";
 } else {
-    echo <br> "Stránka byla načtena bez odeslaného formuláře";
+    echo "<br> Stránka byla načtena bez odeslaného formuláře";
 }
 ?>
 </body>
